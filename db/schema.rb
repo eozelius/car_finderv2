@@ -17,9 +17,10 @@ ActiveRecord::Schema.define(version: 2020_08_12_163314) do
     t.string "make"
     t.string "style"
     t.string "year"
-    t.string "price_range"
-    t.boolean "featured", default: false
     t.string "color"
+    t.integer "price_min"
+    t.integer "price_max"
+    t.boolean "featured", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

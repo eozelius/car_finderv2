@@ -12,4 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ require reset.scss
+ require cars_hero.scss
+ require header.scss
  */

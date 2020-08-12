@@ -5,9 +5,10 @@ class CreateCars < ActiveRecord::Migration[6.0]
       t.string :make
       t.string :style
       t.string :year
-      t.string :price_range
-      t.boolean :featured, default: false
       t.string :color
+      t.integer :price_min
+      t.integer :price_max
+      t.boolean :featured, default: false
       t.timestamps
     end
   end

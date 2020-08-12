@@ -1,0 +1,25 @@
+.header {
+  font-family: 'Arial';
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 23px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 4%;
+  background-color: #252736;
+  display: inline-block;
+  color: #fff;
+  display: flex;
+}
+
+h1 {
+  align-self: center;
+}
+
+img {
+  width: 100px;
+  height: 50px;
+  align-self: center;
+}

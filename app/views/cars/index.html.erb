@@ -1,0 +1,38 @@
+<div class="cars-index-container">
+  <%= render 'cars/cars_hero' %>
+
+  <!-- Featured Cars -->
+  <div class="featured-cars-container">
+    <h2>Featured Cars</h2>
+
+    <% @featured_cars.each do | car | %>
+      <div class="featured-cars-wrapper">
+        <div class="car-item__content">
+          <h3><%= car.make %> <%= car.name %></h3>
+          <p><span class="attr">style:</span> <%= car.style %></p>
+          <p><span class="attr">year:</span> <%= car.year %></p>
+          <p><span class="attr">color:</span> <%= car.color %></p>
+          <p><span class="attr">price range:</span> <%= number_to_currency(car.price_min) %> - <%= number_to_currency(car.price_max) %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  
+  <!-- All Cars -->
+  <div class="cars-list-container">
+    <h2>All Cars</h2>
+    <div class="cars-wrapper">
+      <% @all_cars.each do | car | %>
+        <div class="car-item__container">
+          <div class="car-item__content">
+            <h3><%= car.make %> <%= car.name %></h3>
+            <p><span class="attr">style:</span> <%= car.style %></p>
+            <p><span class="attr">year:</span> <%= car.year %></p>
+            <p><span class="attr">color:</span> <%= car.color %></p>
+            <p><span class="attr">price range:</span> <%= number_to_currency(car.price_min) %> - <%= number_to_currency(car.price_max) %></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
